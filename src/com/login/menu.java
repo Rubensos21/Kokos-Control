@@ -20,6 +20,8 @@ public class menu extends javax.swing.JFrame {
     public menu() {
         initComponents();
         SetDate();       
+        this.setExtendedState(this.MAXIMIZED_BOTH);
+
     }
     private void SetDate() {
         LocalDate now = LocalDate.now();
@@ -52,6 +54,7 @@ public class menu extends javax.swing.JFrame {
         fecha = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         background.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -326,12 +329,13 @@ public class menu extends javax.swing.JFrame {
 
         int option = JOptionPane.showConfirmDialog(this, "¿Seguro que quieres salir?", "Confirmación", JOptionPane.YES_NO_OPTION);
         if (option == JOptionPane.YES_OPTION) 
-        {
         // Si, cierra sesion
+        {
             login lg = new login();
             lg.setVisible(true);
             this.dispose();
-        } else 
+        } 
+        else 
         {
         //"No", no hace nada
         }

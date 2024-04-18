@@ -146,6 +146,12 @@ public class login extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txEntrarMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                txEntrarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                txEntrarMouseExited(evt);
+            }
         });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -339,7 +345,7 @@ public class login extends javax.swing.JFrame {
        String usuario = userTx.getText();
        String contrasena = String.valueOf(passTx.getPassword());
     
-        if (usuario.equals("Ivan Rojo") && contrasena.equals("kokospizza1234")) {
+        if (usuario.equals("123") && contrasena.equals("123")) {
            menu mn = new menu();
            mn.setVisible(true);
            this.dispose();
@@ -360,6 +366,16 @@ public class login extends javax.swing.JFrame {
     private void userTxKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_userTxKeyTyped
         
     }//GEN-LAST:event_userTxKeyTyped
+
+    private void txEntrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txEntrarMouseEntered
+        // TODO add your handling code here:
+        jPanel2.setBackground(Color.orange);
+    }//GEN-LAST:event_txEntrarMouseEntered
+
+    private void txEntrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txEntrarMouseExited
+        // TODO add your handling code here:
+        jPanel2.setBackground(new Color(247,148,29));
+    }//GEN-LAST:event_txEntrarMouseExited
 
     /**
      * @param args the command line arguments
