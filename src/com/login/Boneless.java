@@ -15,9 +15,14 @@ public class Boneless extends javax.swing.JFrame {
     /**
      * Creates new form CrearPedido
      */
+    private boolean bbqTxtClick = false;
+    private boolean bbpTxtClick = false;
+    private boolean picTxtClick = false;
+    private boolean tamTxtClick = false;
+    private boolean manTxtClick = false;
     public Boneless() {
         initComponents();
-        this.setExtendedState(this.MAXIMIZED_BOTH);
+        this.setExtendedState(this.MAXIMIZED_BOTH);  
     }
 
     /**
@@ -46,6 +51,8 @@ public class Boneless extends javax.swing.JFrame {
         tamTxt = new javax.swing.JLabel();
         manBtn = new javax.swing.JPanel();
         manTxt = new javax.swing.JLabel();
+        lbConfirmar2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -108,7 +115,7 @@ public class Boneless extends javax.swing.JFrame {
                 .addComponent(lbMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/logo.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/Kokos Control1.png"))); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLabel20.setText("Salsas");
@@ -120,15 +127,23 @@ public class Boneless extends javax.swing.JFrame {
         bbqTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         bbqTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bbqTxt.setText("BBQ");
+        bbqTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bbqTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bbqTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bbqTxtMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout bbqBtnLayout = new javax.swing.GroupLayout(bbqBtn);
         bbqBtn.setLayout(bbqBtnLayout);
         bbqBtnLayout.setHorizontalGroup(
             bbqBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bbqBtnLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bbqTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(bbqTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
         );
         bbqBtnLayout.setVerticalGroup(
             bbqBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,15 +157,23 @@ public class Boneless extends javax.swing.JFrame {
         bbpTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         bbpTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bbpTxt.setText("BBQ PICOSA");
+        bbpTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bbpTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bbpTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bbpTxtMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout bbpBtnLayout = new javax.swing.GroupLayout(bbpBtn);
         bbpBtn.setLayout(bbpBtnLayout);
         bbpBtnLayout.setHorizontalGroup(
             bbpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bbpBtnLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bbpTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(bbpTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
         );
         bbpBtnLayout.setVerticalGroup(
             bbpBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,15 +187,23 @@ public class Boneless extends javax.swing.JFrame {
         picTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         picTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         picTxt.setText("PICOSA");
+        picTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                picTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                picTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                picTxtMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout picBtnLayout = new javax.swing.GroupLayout(picBtn);
         picBtn.setLayout(picBtnLayout);
         picBtnLayout.setHorizontalGroup(
             picBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(picBtnLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(picTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(picTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
         );
         picBtnLayout.setVerticalGroup(
             picBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,15 +217,23 @@ public class Boneless extends javax.swing.JFrame {
         tamTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         tamTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         tamTxt.setText("TAMARINDO HAB");
+        tamTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tamTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                tamTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                tamTxtMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout tamBtnLayout = new javax.swing.GroupLayout(tamBtn);
         tamBtn.setLayout(tamBtnLayout);
         tamBtnLayout.setHorizontalGroup(
             tamBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(tamBtnLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(tamTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(tamTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
         );
         tamBtnLayout.setVerticalGroup(
             tamBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,19 +247,58 @@ public class Boneless extends javax.swing.JFrame {
         manTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         manTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         manTxt.setText("MANGO HAB");
+        manTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                manTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                manTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                manTxtMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout manBtnLayout = new javax.swing.GroupLayout(manBtn);
         manBtn.setLayout(manBtnLayout);
         manBtnLayout.setHorizontalGroup(
             manBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(manBtnLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(manTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(manTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
         );
         manBtnLayout.setVerticalGroup(
             manBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(manTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+        );
+
+        lbConfirmar2.setBackground(new java.awt.Color(255, 153, 0));
+        lbConfirmar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lbConfirmar2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lbConfirmar2MouseExited(evt);
+            }
+        });
+
+        jLabel4.setBackground(new java.awt.Color(255, 153, 0));
+        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("CONFIRMAR");
+
+        javax.swing.GroupLayout lbConfirmar2Layout = new javax.swing.GroupLayout(lbConfirmar2);
+        lbConfirmar2.setLayout(lbConfirmar2Layout);
+        lbConfirmar2Layout.setHorizontalGroup(
+            lbConfirmar2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lbConfirmar2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        lbConfirmar2Layout.setVerticalGroup(
+            lbConfirmar2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lbConfirmar2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -230,42 +308,44 @@ public class Boneless extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(150, 150, 150)
-                        .addComponent(jLabel6))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(bbqBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(bbpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(picBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(tamBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(353, 353, 353)
-                        .addComponent(manBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(jLabel20)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(150, 150, 150)
+                                .addComponent(jLabel6))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(130, 130, 130)
+                                .addComponent(bbqBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(29, 29, 29)
+                                .addComponent(bbpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(picBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(29, 29, 29)
+                                .addComponent(tamBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(390, 390, 390)
+                                .addComponent(manBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(409, 409, 409)
+                                .addComponent(jLabel20)))
+                        .addGap(18, 120, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lbConfirmar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)))
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 691, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(68, 68, 68)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(131, 131, 131)
                 .addComponent(jLabel20)
-                .addGap(82, 82, 82)
+                .addGap(51, 51, 51)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(bbpBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(picBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -273,7 +353,10 @@ public class Boneless extends javax.swing.JFrame {
                     .addComponent(tamBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addComponent(manBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
+                .addComponent(lbConfirmar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 691, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -303,6 +386,136 @@ public class Boneless extends javax.swing.JFrame {
     private void lbMenuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbMenuMouseExited
         jPanel3.setBackground(new Color(247,148,29));
     }//GEN-LAST:event_lbMenuMouseExited
+
+    private void bbqTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bbqTxtMouseClicked
+        // TODO add your handling code here:
+        bbqTxtClick = true;
+        bbqBtn.setBackground(new Color(247,148,29));
+        bbpBtn.setBackground(Color.white);
+        picBtn.setBackground(Color.white);
+        tamBtn.setBackground(Color.white);
+        manBtn.setBackground(Color.white);
+    }//GEN-LAST:event_bbqTxtMouseClicked
+
+    private void bbqTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bbqTxtMouseEntered
+        // TODO add your handling code here:
+        if(!bbqTxtClick){
+            bbqBtn.setBackground(new Color(247,148,29));
+        }
+    }//GEN-LAST:event_bbqTxtMouseEntered
+
+    private void bbqTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bbqTxtMouseExited
+        // TODO add your handling code here:
+        if(!bbqTxtClick){
+            bbqBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_bbqTxtMouseExited
+
+    private void bbpTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bbpTxtMouseClicked
+        // TODO add your handling code here:
+        bbpTxtClick = true;
+        bbpBtn.setBackground(new Color(247,148,29));
+        bbqBtn.setBackground(Color.white);
+        picBtn.setBackground(Color.white);
+        tamBtn.setBackground(Color.white);
+        manBtn.setBackground(Color.white);
+    }//GEN-LAST:event_bbpTxtMouseClicked
+
+    private void bbpTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bbpTxtMouseEntered
+        // TODO add your handling code here:
+        if(!bbpTxtClick) {
+            bbpBtn.setBackground(new Color(247,148,29));
+        }
+    }//GEN-LAST:event_bbpTxtMouseEntered
+
+    private void bbpTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bbpTxtMouseExited
+        // TODO add your handling code here:
+        if(!bbpTxtClick) {
+            bbpBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_bbpTxtMouseExited
+
+    private void picTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_picTxtMouseClicked
+        // TODO add your handling code here:
+        picTxtClick = true;
+        picBtn.setBackground(new Color(247,148,29));
+        bbqBtn.setBackground(Color.white);
+        bbpBtn.setBackground(Color.white);
+        tamBtn.setBackground(Color.white);
+        manBtn.setBackground(Color.white);
+    }//GEN-LAST:event_picTxtMouseClicked
+
+    private void picTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_picTxtMouseEntered
+        // TODO add your handling code here:
+        if(!picTxtClick) {
+            picBtn.setBackground(new Color(247,148,29));
+        }
+    }//GEN-LAST:event_picTxtMouseEntered
+
+    private void picTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_picTxtMouseExited
+        // TODO add your handling code here:
+         if(!picTxtClick) {
+            picBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_picTxtMouseExited
+
+    private void tamTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tamTxtMouseClicked
+        // TODO add your handling code here:
+        tamTxtClick = true;
+        tamBtn.setBackground(new Color(247,148,29));
+        bbqBtn.setBackground(Color.white);
+        bbpBtn.setBackground(Color.white);
+        picBtn.setBackground(Color.white);
+        manBtn.setBackground(Color.white);
+    }//GEN-LAST:event_tamTxtMouseClicked
+
+    private void tamTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tamTxtMouseEntered
+        // TODO add your handling code here:
+        if(!tamTxtClick) {
+            tamBtn.setBackground(new Color(247,148,29));
+        }
+    }//GEN-LAST:event_tamTxtMouseEntered
+
+    private void tamTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tamTxtMouseExited
+        // TODO add your handling code here:
+        if(!tamTxtClick) {
+            tamBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_tamTxtMouseExited
+
+    private void manTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manTxtMouseClicked
+        // TODO add your handling code here:
+        manTxtClick = true;
+        manBtn.setBackground(new Color(247,148,29));
+        bbqBtn.setBackground(Color.white);
+        bbpBtn.setBackground(Color.white);
+        tamBtn.setBackground(Color.white);
+        picBtn.setBackground(Color.white);
+    }//GEN-LAST:event_manTxtMouseClicked
+
+    private void manTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manTxtMouseEntered
+        // TODO add your handling code here:
+        if(!manTxtClick) {
+            manBtn.setBackground(new Color(247,148,29));
+        }
+    }//GEN-LAST:event_manTxtMouseEntered
+
+    private void manTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manTxtMouseExited
+        // TODO add your handling code here:
+        if(!manTxtClick) {
+            manBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_manTxtMouseExited
+
+    private void lbConfirmar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbConfirmar2MouseEntered
+        // TODO add your handling code here:
+        lbConfirmar2.setBackground(Color.orange);
+    }//GEN-LAST:event_lbConfirmar2MouseEntered
+
+    private void lbConfirmar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbConfirmar2MouseExited
+        // TODO add your handling code here:
+        lbConfirmar2.setBackground(new Color(247,148,29));
+    }//GEN-LAST:event_lbConfirmar2MouseExited
 
     /**
      * @param args the command line arguments
@@ -376,11 +589,17 @@ public class Boneless extends javax.swing.JFrame {
     private javax.swing.JPanel bbqBtn;
     private javax.swing.JLabel bbqTxt;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel lbConfirmar;
+    private javax.swing.JPanel lbConfirmar1;
+    private javax.swing.JPanel lbConfirmar2;
     private javax.swing.JLabel lbMenu;
     private javax.swing.JPanel manBtn;
     private javax.swing.JLabel manTxt;

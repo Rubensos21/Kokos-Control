@@ -15,9 +15,22 @@ public class Pizzas extends javax.swing.JFrame {
     /**
      * Creates new form CrearPedido
      */
+    private boolean cfTxtClick = false;
+    private boolean hawTxtClick = false;
+    private boolean pepTxtClick = false;
+    private boolean mexTxtClick = false;
+    private boolean kkTxtClick = false;
+    private boolean vegTxtClick = false;
+    private boolean espTxtClick = false;
+    private boolean chinTxtClick = false;
+    private boolean pasTxtClick = false;
+    private boolean quesoTxtClick = false;
+    private boolean mexwTxtClick = false;
+    private boolean capTxtClick = false;
     public Pizzas() {
         initComponents();
         this.setExtendedState(this.MAXIMIZED_BOTH);
+        
     }
 
     /**
@@ -36,31 +49,30 @@ public class Pizzas extends javax.swing.JFrame {
         lbMenu = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        bbqTxt = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        bbqTxt1 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
-        bbqTxt2 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        bbqTxt3 = new javax.swing.JLabel();
-        jPanel17 = new javax.swing.JPanel();
-        bbqTxt5 = new javax.swing.JLabel();
-        jPanel19 = new javax.swing.JPanel();
-        bbqTxt7 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
-        bbqTxt4 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
-        bbqTxt6 = new javax.swing.JLabel();
-        jPanel23 = new javax.swing.JPanel();
-        bbqTxt10 = new javax.swing.JLabel();
-        jPanel21 = new javax.swing.JPanel();
-        jPanel22 = new javax.swing.JPanel();
-        bbqTxt9 = new javax.swing.JLabel();
-        jPanel24 = new javax.swing.JPanel();
-        bbqTxt11 = new javax.swing.JLabel();
-        jPanel20 = new javax.swing.JPanel();
-        bbqTxt8 = new javax.swing.JLabel();
+        cfBtn = new javax.swing.JPanel();
+        cfTxt = new javax.swing.JLabel();
+        hawBtn = new javax.swing.JPanel();
+        hawTxt = new javax.swing.JLabel();
+        pepBtn = new javax.swing.JPanel();
+        pepTxt = new javax.swing.JLabel();
+        mexBtn = new javax.swing.JPanel();
+        mexTxt = new javax.swing.JLabel();
+        kkBtn = new javax.swing.JPanel();
+        kkTxt = new javax.swing.JLabel();
+        vegBtn = new javax.swing.JPanel();
+        vegTxt = new javax.swing.JLabel();
+        espBtn = new javax.swing.JPanel();
+        espTxt = new javax.swing.JLabel();
+        chinBtn = new javax.swing.JPanel();
+        chinTxt = new javax.swing.JLabel();
+        pasBtn = new javax.swing.JPanel();
+        pasTxt = new javax.swing.JLabel();
+        quesoBtn = new javax.swing.JPanel();
+        quesoTxt = new javax.swing.JLabel();
+        mexwBtn = new javax.swing.JPanel();
+        mexwTxt = new javax.swing.JLabel();
+        capBtn = new javax.swing.JPanel();
+        capTxt = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
         jComboBox3 = new javax.swing.JComboBox<>();
         jLabel24 = new javax.swing.JLabel();
@@ -135,292 +147,406 @@ public class Pizzas extends javax.swing.JFrame {
                 .addComponent(lbMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/logo.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/Kokos Control1.png"))); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("Especialidades");
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel4.setPreferredSize(new java.awt.Dimension(2, 66));
+        cfBtn.setBackground(new java.awt.Color(255, 255, 255));
+        cfBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        cfBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt.setText("CARNES FRÍAS");
+        cfTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        cfTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        cfTxt.setText("CARNES FRÍAS");
+        cfTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cfTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                cfTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                cfTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout cfBtnLayout = new javax.swing.GroupLayout(cfBtn);
+        cfBtn.setLayout(cfBtnLayout);
+        cfBtnLayout.setHorizontalGroup(
+            cfBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cfBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(cfTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        cfBtnLayout.setVerticalGroup(
+            cfBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(cfTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel5.setPreferredSize(new java.awt.Dimension(2, 66));
+        hawBtn.setBackground(new java.awt.Color(255, 255, 255));
+        hawBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        hawBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt1.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt1.setText("HAWAIANA");
+        hawTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        hawTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        hawTxt.setText("HAWAIANA");
+        hawTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hawTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                hawTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                hawTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(bbqTxt1, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(bbqTxt1, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel8.setPreferredSize(new java.awt.Dimension(2, 66));
-
-        bbqTxt2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt2.setText("PEPERONÍ");
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout hawBtnLayout = new javax.swing.GroupLayout(hawBtn);
+        hawBtn.setLayout(hawBtnLayout);
+        hawBtnLayout.setHorizontalGroup(
+            hawBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(hawBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt2, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(hawTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
+                .addGap(16, 16, 16))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        hawBtnLayout.setVerticalGroup(
+            hawBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(hawTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
         );
 
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel9.setPreferredSize(new java.awt.Dimension(2, 66));
+        pepBtn.setBackground(new java.awt.Color(255, 255, 255));
+        pepBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        pepBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt3.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt3.setText("MEXICANA");
+        pepTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        pepTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pepTxt.setText("PEPERONÍ");
+        pepTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pepTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pepTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pepTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout pepBtnLayout = new javax.swing.GroupLayout(pepBtn);
+        pepBtn.setLayout(pepBtnLayout);
+        pepBtnLayout.setHorizontalGroup(
+            pepBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pepBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt3, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(pepTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        pepBtnLayout.setVerticalGroup(
+            pepBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pepTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel17.setPreferredSize(new java.awt.Dimension(2, 66));
+        mexBtn.setBackground(new java.awt.Color(255, 255, 255));
+        mexBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        mexBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt5.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt5.setText("KOKOS");
+        mexTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        mexTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mexTxt.setText("MEXICANA");
+        mexTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                mexTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                mexTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                mexTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+        javax.swing.GroupLayout mexBtnLayout = new javax.swing.GroupLayout(mexBtn);
+        mexBtn.setLayout(mexBtnLayout);
+        mexBtnLayout.setHorizontalGroup(
+            mexBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mexBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt5, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(mexTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        mexBtnLayout.setVerticalGroup(
+            mexBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mexTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel19.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel19.setPreferredSize(new java.awt.Dimension(2, 66));
+        kkBtn.setBackground(new java.awt.Color(255, 255, 255));
+        kkBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        kkBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt7.setText("VEGETARIANA");
+        kkTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        kkTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        kkTxt.setText("KOKOS");
+        kkTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                kkTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                kkTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                kkTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+        javax.swing.GroupLayout kkBtnLayout = new javax.swing.GroupLayout(kkBtn);
+        kkBtn.setLayout(kkBtnLayout);
+        kkBtnLayout.setHorizontalGroup(
+            kkBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kkBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt7, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(kkTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        kkBtnLayout.setVerticalGroup(
+            kkBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(kkTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel16.setPreferredSize(new java.awt.Dimension(2, 66));
+        vegBtn.setBackground(new java.awt.Color(255, 255, 255));
+        vegBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        vegBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt4.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt4.setText("ESPECIAL");
+        vegTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        vegTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        vegTxt.setText("VEGETARIANA");
+        vegTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vegTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                vegTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                vegTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+        javax.swing.GroupLayout vegBtnLayout = new javax.swing.GroupLayout(vegBtn);
+        vegBtn.setLayout(vegBtnLayout);
+        vegBtnLayout.setHorizontalGroup(
+            vegBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vegBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt4, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(vegTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        vegBtnLayout.setVerticalGroup(
+            vegBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(vegTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel18.setPreferredSize(new java.awt.Dimension(2, 66));
+        espBtn.setBackground(new java.awt.Color(255, 255, 255));
+        espBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        espBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt6.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt6.setText("CHINGONA");
+        espTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        espTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        espTxt.setText("ESPECIAL");
+        espTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                espTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                espTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                espTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+        javax.swing.GroupLayout espBtnLayout = new javax.swing.GroupLayout(espBtn);
+        espBtn.setLayout(espBtnLayout);
+        espBtnLayout.setHorizontalGroup(
+            espBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, espBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt6, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(espTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        espBtnLayout.setVerticalGroup(
+            espBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(espTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel23.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel23.setPreferredSize(new java.awt.Dimension(2, 66));
+        chinBtn.setBackground(new java.awt.Color(255, 255, 255));
+        chinBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        chinBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt10.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt10.setText("PASTOR");
+        chinTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        chinTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        chinTxt.setText("CHINGONA");
+        chinTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                chinTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                chinTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                chinTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
-        jPanel23.setLayout(jPanel23Layout);
-        jPanel23Layout.setHorizontalGroup(
-            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
+        javax.swing.GroupLayout chinBtnLayout = new javax.swing.GroupLayout(chinBtn);
+        chinBtn.setLayout(chinBtnLayout);
+        chinBtnLayout.setHorizontalGroup(
+            chinBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, chinBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt10, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(chinTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel23Layout.setVerticalGroup(
-            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        chinBtnLayout.setVerticalGroup(
+            chinBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(chinTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel21.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel21.setPreferredSize(new java.awt.Dimension(2, 66));
+        pasBtn.setBackground(new java.awt.Color(255, 255, 255));
+        pasBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        pasBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        jPanel22.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel22.setPreferredSize(new java.awt.Dimension(2, 66));
+        pasTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        pasTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pasTxt.setText("PASTOR");
+        pasTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pasTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pasTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pasTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
-        jPanel22.setLayout(jPanel22Layout);
-        jPanel22Layout.setHorizontalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel22Layout.setVerticalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        bbqTxt9.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt9.setText("QUESO");
-
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+        javax.swing.GroupLayout pasBtnLayout = new javax.swing.GroupLayout(pasBtn);
+        pasBtn.setLayout(pasBtnLayout);
+        pasBtnLayout.setHorizontalGroup(
+            pasBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pasBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt9, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(pasTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        pasBtnLayout.setVerticalGroup(
+            pasBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pasTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel24.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel24.setPreferredSize(new java.awt.Dimension(2, 66));
+        quesoBtn.setBackground(new java.awt.Color(255, 255, 255));
+        quesoBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        quesoBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt11.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt11.setText("MEXIWAIANA");
+        quesoTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        quesoTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quesoTxt.setText("QUESO");
+        quesoTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                quesoTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                quesoTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                quesoTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
-        jPanel24.setLayout(jPanel24Layout);
-        jPanel24Layout.setHorizontalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
+        javax.swing.GroupLayout quesoBtnLayout = new javax.swing.GroupLayout(quesoBtn);
+        quesoBtn.setLayout(quesoBtnLayout);
+        quesoBtnLayout.setHorizontalGroup(
+            quesoBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quesoBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt11, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(quesoTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel24Layout.setVerticalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        quesoBtnLayout.setVerticalGroup(
+            quesoBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(quesoTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel20.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel20.setPreferredSize(new java.awt.Dimension(2, 66));
+        mexwBtn.setBackground(new java.awt.Color(255, 255, 255));
+        mexwBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        mexwBtn.setPreferredSize(new java.awt.Dimension(2, 66));
 
-        bbqTxt8.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        bbqTxt8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bbqTxt8.setText("CAPRICHOSA");
+        mexwTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        mexwTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mexwTxt.setText("MEXIWAIANA");
+        mexwTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                mexwTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                mexwTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                mexwTxtMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+        javax.swing.GroupLayout mexwBtnLayout = new javax.swing.GroupLayout(mexwBtn);
+        mexwBtn.setLayout(mexwBtnLayout);
+        mexwBtnLayout.setHorizontalGroup(
+            mexwBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mexwBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bbqTxt8, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(mexwTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bbqTxt8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        mexwBtnLayout.setVerticalGroup(
+            mexwBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mexwTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        capBtn.setBackground(new java.awt.Color(255, 255, 255));
+        capBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        capBtn.setPreferredSize(new java.awt.Dimension(2, 66));
+
+        capTxt.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        capTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        capTxt.setText("CAPRICHOSA");
+        capTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                capTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                capTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                capTxtMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout capBtnLayout = new javax.swing.GroupLayout(capBtn);
+        capBtn.setLayout(capBtnLayout);
+        capBtnLayout.setHorizontalGroup(
+            capBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, capBtnLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(capTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        capBtnLayout.setVerticalGroup(
+            capBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(capTxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jComboBox2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.light"));
@@ -453,10 +579,10 @@ public class Pizzas extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(mexBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(pepBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(cfBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(hawBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel24)
@@ -464,20 +590,20 @@ public class Pizzas extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(45, 45, 45)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                            .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                            .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(vegBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(chinBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(kkBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                            .addComponent(espBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
                             .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel25)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                    .addComponent(jPanel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                    .addComponent(jPanel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                    .addComponent(jPanel20, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE))
+                    .addComponent(mexwBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                    .addComponent(pasBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                    .addComponent(quesoBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                    .addComponent(capBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE))
                 .addGap(45, 45, 45)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -502,29 +628,29 @@ public class Pizzas extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(hawBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                        .addComponent(cfBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                        .addComponent(pepBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
+                        .addComponent(mexBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(espBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                        .addComponent(kkBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                        .addComponent(chinBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
+                        .addComponent(vegBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(capBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                        .addComponent(quesoBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                        .addComponent(pasBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)))
+                        .addComponent(mexwBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)))
                 .addGap(39, 39, 39))
         );
 
@@ -559,6 +685,378 @@ public class Pizzas extends javax.swing.JFrame {
     private void jPanel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanel1MouseEntered
+
+    private void hawTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hawTxtMouseClicked
+        // TODO add your handling code here:
+        hawTxtClick = true;
+        hawBtn.setBackground(new Color(247,148,29));
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_hawTxtMouseClicked
+
+    private void hawTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hawTxtMouseEntered
+        // TODO add your handling code here:
+        if(!hawTxtClick){
+            hawBtn.setBackground(new Color(247,148,29));
+        }
+    }//GEN-LAST:event_hawTxtMouseEntered
+
+    private void hawTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hawTxtMouseExited
+        // TODO add your handling code here:
+        if(!hawTxtClick){
+            hawBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_hawTxtMouseExited
+
+    private void cfTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cfTxtMouseClicked
+        // TODO add your handling code here:
+        cfTxtClick = true;
+        cfBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_cfTxtMouseClicked
+
+    private void cfTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cfTxtMouseEntered
+        // TODO add your handling code here:
+        if(!cfTxtClick){
+            cfBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_cfTxtMouseEntered
+
+    private void cfTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cfTxtMouseExited
+        // TODO add your handling code here:
+        if(!cfTxtClick){
+            cfBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_cfTxtMouseExited
+
+    private void pepTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pepTxtMouseClicked
+        // TODO add your handling code here:
+        pepTxtClick = true;
+        pepBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_pepTxtMouseClicked
+
+    private void pepTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pepTxtMouseEntered
+        // TODO add your handling code here:
+        if(!pepTxtClick){
+            pepBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_pepTxtMouseEntered
+
+    private void pepTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pepTxtMouseExited
+        // TODO add your handling code here:
+        if(!pepTxtClick){
+            pepBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_pepTxtMouseExited
+
+    private void mexTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mexTxtMouseClicked
+        // TODO add your handling code here:
+        mexTxtClick = true;
+        mexBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_mexTxtMouseClicked
+
+    private void mexTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mexTxtMouseEntered
+        // TODO add your handling code here:
+        if(!mexTxtClick){
+            mexBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_mexTxtMouseEntered
+
+    private void mexTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mexTxtMouseExited
+        // TODO add your handling code here:
+        if(!mexTxtClick){
+            mexBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_mexTxtMouseExited
+
+    private void espTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_espTxtMouseClicked
+        // TODO add your handling code here:
+        espTxtClick = true;
+        espBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_espTxtMouseClicked
+
+    private void espTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_espTxtMouseEntered
+        // TODO add your handling code here:
+        if(!espTxtClick){
+            espBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_espTxtMouseEntered
+
+    private void espTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_espTxtMouseExited
+        // TODO add your handling code here:
+        if(!espTxtClick){
+            espBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_espTxtMouseExited
+
+    private void kkTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kkTxtMouseClicked
+        // TODO add your handling code here:
+        kkTxtClick = true;
+        kkBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_kkTxtMouseClicked
+
+    private void kkTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kkTxtMouseEntered
+        // TODO add your handling code here:
+        if(!kkTxtClick){
+            kkBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_kkTxtMouseEntered
+
+    private void kkTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kkTxtMouseExited
+        // TODO add your handling code here:
+        if(!kkTxtClick){
+            kkBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_kkTxtMouseExited
+
+    private void chinTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chinTxtMouseClicked
+        // TODO add your handling code here:
+        chinTxtClick = true;
+        chinBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_chinTxtMouseClicked
+
+    private void chinTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chinTxtMouseEntered
+        // TODO add your handling code here:
+        if(!chinTxtClick){
+            chinBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_chinTxtMouseEntered
+
+    private void chinTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chinTxtMouseExited
+        // TODO add your handling code here:
+        if(!chinTxtClick){
+            chinBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_chinTxtMouseExited
+
+    private void vegTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vegTxtMouseClicked
+        // TODO add your handling code here:
+        vegTxtClick = true;
+        vegBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+    }//GEN-LAST:event_vegTxtMouseClicked
+
+    private void vegTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vegTxtMouseEntered
+        // TODO add your handling code here:
+        if(!vegTxtClick){
+            vegBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_vegTxtMouseEntered
+
+    private void vegTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vegTxtMouseExited
+        // TODO add your handling code here:
+        if(!vegTxtClick){
+            vegBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_vegTxtMouseExited
+
+    private void capTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_capTxtMouseClicked
+        // TODO add your handling code here:
+        capTxtClick = true;
+        capBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+    }//GEN-LAST:event_capTxtMouseClicked
+
+    private void capTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_capTxtMouseEntered
+        // TODO add your handling code here:
+        if(!capTxtClick){
+            capBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_capTxtMouseEntered
+
+    private void capTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_capTxtMouseExited
+        // TODO add your handling code here:
+        if(!capTxtClick){
+            capBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_capTxtMouseExited
+
+    private void quesoTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quesoTxtMouseClicked
+        // TODO add your handling code here:
+        quesoTxtClick = true;
+        quesoBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+    }//GEN-LAST:event_quesoTxtMouseClicked
+
+    private void quesoTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quesoTxtMouseEntered
+        // TODO add your handling code here:
+        if(!quesoTxtClick){
+            quesoBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_quesoTxtMouseEntered
+
+    private void quesoTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quesoTxtMouseExited
+        // TODO add your handling code here:
+        if(!quesoTxtClick){
+            quesoBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_quesoTxtMouseExited
+
+    private void pasTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasTxtMouseClicked
+        // TODO add your handling code here:
+        pasTxtClick = true;
+        pasBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+        mexwBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+    }//GEN-LAST:event_pasTxtMouseClicked
+
+    private void pasTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasTxtMouseEntered
+        // TODO add your handling code here:
+        if(!pasTxtClick){
+            pasBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_pasTxtMouseEntered
+
+    private void pasTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasTxtMouseExited
+        // TODO add your handling code here:
+        if(!pasTxtClick){
+            pasBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_pasTxtMouseExited
+
+    private void mexwTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mexwTxtMouseClicked
+        // TODO add your handling code here:
+        mexwTxtClick = true;
+        mexwBtn.setBackground(new Color(247,148,29));
+        hawBtn.setBackground(Color.white);
+        cfBtn.setBackground(Color.white);
+        pepBtn.setBackground(Color.white);
+        espBtn.setBackground(Color.white);
+        chinBtn.setBackground(Color.white);
+        mexBtn.setBackground(Color.white);
+        kkBtn.setBackground(Color.white);
+        quesoBtn.setBackground(Color.white);
+        capBtn.setBackground(Color.white);
+        pasBtn.setBackground(Color.white);
+        vegBtn.setBackground(Color.white);
+    }//GEN-LAST:event_mexwTxtMouseClicked
+
+    private void mexwTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mexwTxtMouseEntered
+        // TODO add your handling code here:
+        if(!mexwTxtClick){
+            mexwBtn.setBackground(new Color(247, 148, 29));
+        }
+    }//GEN-LAST:event_mexwTxtMouseEntered
+
+    private void mexwTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mexwTxtMouseExited
+        // TODO add your handling code here:
+        if(!mexwTxtClick){
+            mexwBtn.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_mexwTxtMouseExited
 
     /**
      * @param args the command line arguments
@@ -603,18 +1101,16 @@ public class Pizzas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel bbqTxt;
-    private javax.swing.JLabel bbqTxt1;
-    private javax.swing.JLabel bbqTxt10;
-    private javax.swing.JLabel bbqTxt11;
-    private javax.swing.JLabel bbqTxt2;
-    private javax.swing.JLabel bbqTxt3;
-    private javax.swing.JLabel bbqTxt4;
-    private javax.swing.JLabel bbqTxt5;
-    private javax.swing.JLabel bbqTxt6;
-    private javax.swing.JLabel bbqTxt7;
-    private javax.swing.JLabel bbqTxt8;
-    private javax.swing.JLabel bbqTxt9;
+    private javax.swing.JPanel capBtn;
+    private javax.swing.JLabel capTxt;
+    private javax.swing.JPanel cfBtn;
+    private javax.swing.JLabel cfTxt;
+    private javax.swing.JPanel chinBtn;
+    private javax.swing.JLabel chinTxt;
+    private javax.swing.JPanel espBtn;
+    private javax.swing.JLabel espTxt;
+    private javax.swing.JPanel hawBtn;
+    private javax.swing.JLabel hawTxt;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
@@ -623,21 +1119,22 @@ public class Pizzas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel kkBtn;
+    private javax.swing.JLabel kkTxt;
     private javax.swing.JLabel lbMenu;
+    private javax.swing.JPanel mexBtn;
+    private javax.swing.JLabel mexTxt;
+    private javax.swing.JPanel mexwBtn;
+    private javax.swing.JLabel mexwTxt;
+    private javax.swing.JPanel pasBtn;
+    private javax.swing.JLabel pasTxt;
+    private javax.swing.JPanel pepBtn;
+    private javax.swing.JLabel pepTxt;
+    private javax.swing.JPanel quesoBtn;
+    private javax.swing.JLabel quesoTxt;
+    private javax.swing.JPanel vegBtn;
+    private javax.swing.JLabel vegTxt;
     // End of variables declaration//GEN-END:variables
 }
